@@ -23,10 +23,19 @@ function trackCTA(){
 	});
 	alert("Event Sent!");
 }
+function goGAEvent(){
+	gtag("event", "MyTestGAEevent", {
+		"platform":"github",
+		"title":"How To Use GA Event",
+		"type": "Button Click"
+	});
+	alert("S
+}
 </script>
 </head>
 <body>
 	追蹤網頁瀏覽次數
 	<button onclick="trackCTA();">Call to Action</button>
+	<button onclick="goGAEvent();">TestEvent</button>
 </body>
 </html>
